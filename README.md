@@ -57,6 +57,14 @@ These CSV files should be placed in the `/F1-Statistics-Mapping/` folder.
 ### Step 4: Running the Script
 Once all datasets are downloaded and placed in the F1-Statistics-Mapping folder along with the F1StatMap.py file, you can now run the program in Python and view the calculated results.
 
+## Anticipated Output
+![RaceData1](https://github.com/user-attachments/assets/2836bd42-c771-4d78-b83e-ec58112b6d01)
+![RaceData2](https://github.com/user-attachments/assets/53f27ea1-de90-4eaf-aff4-b449deb455fe)
+![RaceData3](https://github.com/user-attachments/assets/a2cae121-5259-4180-acca-1e844d83ac36)
+![image](https://github.com/user-attachments/assets/1d52aa45-ec7a-4be3-bb93-e750ad7577db)
+
+
+
 ## Analysis Questions
 
 ### Question 1: Fastest Lap vs Final Position
