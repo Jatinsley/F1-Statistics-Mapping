@@ -55,7 +55,7 @@ The following datasets are required for the analysis:
 These CSV files should be placed in the `/F1-Statistics-Mapping/` folder.
 
 ### Step 4: Running the Script
-Once all datasets are downloaded and placed in the F1-Statistics-Mapping folder along with the .py file, you can now run the program in Python and view the calculated results.
+Once all datasets are downloaded and placed in the F1-Statistics-Mapping folder along with the F1StatMap.py file, you can now run the program in Python and view the calculated results.
 
 ## Analysis Questions
 
@@ -95,7 +95,7 @@ The script generates the following visualizations:
 
 - **Data Dependency**: The analysis is dependent on the accuracy and completeness of the provided datasets. Missing or incorrect data may lead to incorrect results.
 - **File Paths**: The data files must be placed in the `/F1-Statistics-Mapping/` directory for the pipeline to work.
-- **Operating System**: The code has been developed and tested on Windows and macOS. The `f1_analysis.py` script should work across all these platforms as long as Python 3.7+ and the dependencies are correctly installed.
+- **Operating System**: The code has been developed and tested on Windows and macOS. The `F1StatMap.py` script should work across all these platforms as long as Python 3.7+ and the dependencies are correctly installed.
 
 ## Future Enhancements
 
@@ -104,6 +104,4 @@ The script generates the following visualizations:
 - **Real-Time Data Integration**: Allow the pipeline to integrate real-time race data to provide live analysis.
 
 ---
-
-If you have any questions, issues, or suggestions for improvements, please feel free to open an issue or submit a pull request. Happy analyzing! 
 
