@@ -52,7 +52,10 @@ The following datasets are required for the analysis:
 - `races.csv`
 - `qualifying.csv`
 
-These CSV files should be placed in the `/f1db_csv/` folder.
+These CSV files should be placed in the `/F1-Statistics-Mapping/` folder.
+
+### Step 4: Running the Script
+Once all datasets are downloaded and placed in the F1-Statistics-Mapping folder along with the .py file, you can now run the program in Python and view the calculated results.
 
 ## Analysis Questions
 
