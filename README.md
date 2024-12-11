@@ -23,7 +23,7 @@ Formula 1 race data is publicly available and can provide valuable insights into
 ## Requirements
 
 ### Software Requirements:
-- **Operating System**: Windows, macOS, or Linux.
+- **Operating System**: Windows, or macOS
 - **Libraries**:
   - Python 3.7+
   - Pandas
@@ -35,10 +35,12 @@ Formula 1 race data is publicly available and can provide valuable insights into
 ## Installation
 
 ### Step 1: Clone the Repository
-'git clone https://github.com/<your-username>/f1-data-analysis.git cd f1-data-analysis'
+Use `github` to clone this repository
+'git clone https://github.com/Jatinsley/F1-Statistics-Mapping/.git cd F1-Statistics-Mapping'
 
 ### Step 2: Install Dependencies
 Use `pip` to install the required Python libraries:
+
 'pip install pandas numpy scipy matplotlib seaborn'
 
 ### Step 3: Download F1 Data
