@@ -1,5 +1,5 @@
 # F1 Data Analysis Pipeline
-<h1 style="font-size:3em; "> Overview: </h1>
+# Overview
 
 This project provides a Python-based pipeline for analyzing Formula 1 race data. It processes datasets related to lap times, race results, qualifying positions, and driver standings to answer key performance questions. The pipeline uses Pandas, NumPy, Matplotlib, and Seaborn to calculate correlations, visualize trends, and extract insights from race data.
 <br>
