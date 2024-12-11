@@ -36,7 +36,7 @@ Formula 1 race data is publicly available and can provide valuable insights into
 
 ### Step 1: Clone the Repository
 Use `github` to clone this repository
-'git clone https://github.com/Jatinsley/F1-Statistics-Mapping/.git cd F1-Statistics-Mapping'
+'git clone https://github.com/Jatinsley/F1-Statistics-Mapping.git cd F1-Statistics-Mapping'
 
 ### Step 2: Install Dependencies
 Use `pip` to install the required Python libraries:
@@ -94,7 +94,7 @@ The script generates the following visualizations:
 ## Limitations
 
 - **Data Dependency**: The analysis is dependent on the accuracy and completeness of the provided datasets. Missing or incorrect data may lead to incorrect results.
-- **File Paths**: The data files must be placed in the `/f1db_csv/` directory for the pipeline to work.
+- **File Paths**: The data files must be placed in the `/F1-Statistics-Mapping/` directory for the pipeline to work.
 - **Operating System**: The code has been developed and tested on Windows and macOS. The `f1_analysis.py` script should work across all these platforms as long as Python 3.7+ and the dependencies are correctly installed.
 
 ## Future Enhancements
