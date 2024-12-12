@@ -1,13 +1,8 @@
 import numpy as np
 import pandas as pd
-import os
 import matplotlib.pyplot as plt
-import seaborn as sns
-from scipy.stats import ttest_ind
 
 # Set the directory where your F1 data CSV files are stored
-#data_dir = os.path.join(os.getcwd(), 'f1db_csv')  # Assuming f1db_csv is in the same directory as the script
-
 # Paths to required CSVs
 lap_times_path = 'lap_times.csv'
 results_path = 'results.csv'
@@ -156,26 +151,6 @@ print("| Top 10 Most Deviating Races From Historical Average |")
 print("| Name                           | Date       | Race ID | Deviation per Driver (seconds)")
 for _, row in top_10_races.iterrows():
     print(f"| {row['name']:<30} | {row['date']} | {int(row['raceId']):<7} | {row['deviation']:.2f}")
-# ---------------------------------------
-# Question 4: Predicting Position Based on Historical Performance
-# ---------------------------------------
-
-# Sort results by driverId and raceId
-results_sorted = results.sort_values(['driverId', 'raceId'])
-
-# Calculate cumulative average position up to the current race for each driver
-results_sorted['historical_avg_position'] = results_sorted.groupby('driverId')['positionOrder'].expanding().mean().shift(1).reset_index(level=0, drop=True)
-
-# Remove rows where historical average position is NaN (first race for each driver)
-performance_correlation_data = results_sorted.dropna(subset=['historical_avg_position'])
-
-# Calculate correlation between historical average position and current position
-position_prediction_corr = performance_correlation_data[['positionOrder', 'historical_avg_position']].corr()
-
-print("------------------------------------------------------------------------------------------------------------------------------------------------")
-print("| Question 4: For a given circuit, can we reliably predict an individual's race position based on their historical performance? |")
-print("| Correlation between Historical Average Position and Current Position | r = {:.2f}".format(
-    position_prediction_corr.loc['positionOrder', 'historical_avg_position']))
 print("------------------------------------------------------------------------------------------------------------------------------------------------")
 
 # ---------------------------------------
