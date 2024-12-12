@@ -1,4 +1,4 @@
-# F1 Data Analysis Pipeline
+# F1 Data Analysis Project
 
 ## Overview
 
@@ -6,23 +6,14 @@ This Python-based project provides a pipeline for analyzing Formula 1 race data.
 
 ### Features:
 - Analyze the correlation between pace consistency through fastest laps and final season positions.
-- Calculate pole-to-podium conversion rates for drivers.
+- Calculate pole-to-podium conversion rates for each and every driver.
 - Identify races with the most deviation from historical race duration.
 
 ## Why?
 
-Formula 1 race data is publicly available and can provide valuable insights into various performance aspects of drivers and races. This project helps analyze these data points, enabling a deeper understanding of trends, consistency, and the relationship between lap time performance and race results. It’s an ideal tool for both F1 enthusiasts and researchers.
-
-## Main Applications
-
-- **Race Performance Analysis**: Correlation between lap times, fastest laps, and final positions.
-- **Pole-to-Podium Conversion**: Conversion rate of pole positions to podium finishes for drivers.
-- **Race Duration Analysis**: Identify races that deviate most from the historical race duration for each circuit.
-- **General Race Insights**: Understand trends and performance metrics across seasons.
+Formula 1 race data is publicly available and can provide valuable insights into various performance aspects of drivers and races. This project helps analyze these data points, enabling a deeper understanding of trends, consistency, and the relationship between lap time performance and race results. Hopefully, this program can be used as a tool for both F1 enthusiasts or researchers.
 
 ## Requirements
-
-### Software Requirements:
 - **Operating System**: Windows, or macOS
 - **Libraries**:
   - Python 3.7+
@@ -67,10 +58,9 @@ Once all datasets are downloaded and placed in the F1-Statistics-Mapping folder 
 
 ## Analysis Questions
 
-### Question 1: Fastest Lap vs Final Position
-
-- **Goal**: Analyze whether setting the fastest lap correlates with a higher final position in the season.
-- **Process**: Calculate lap time consistency (standard deviation) for each race based on the fastest lap achieved, then correlate it with the final season position.
+### Question 1: Pace Consistency vs Final Season Position
+- **Goal**: Determine if increasing pace consistency for a driver typically indicates a higher final season position.
+- **Process**: Analyze the deviation of the fastest laps for a race by calculating lap time consistency (standard deviation) for each race based on the fastest lap achieved, then correlate it with the final season position.
 - **Output**: 
 - Correlation coefficient between fastest lap consistency and final season position.
 - A bar plot showing the standard deviation of lap time consistency for each finishing position.
@@ -78,7 +68,7 @@ Once all datasets are downloaded and placed in the F1-Statistics-Mapping folder 
 ### Question 2: Pole-to-Podium Conversion Rate
 
 - **Goal**: Determine how often pole positions result in podium finishes.
-- **Process**: Track pole positions and podium finishes, then calculate the conversion rate for each driver.
+- **Process**: Track pole positions and podium finishes for each driver, then calculate the conversion rate for each, map  driverId to each name.
 - **Output**: 
 - Average pole-to-podium conversion rate.
 - Bar plot showing the conversion rate for each driver.
@@ -86,7 +76,7 @@ Once all datasets are downloaded and placed in the F1-Statistics-Mapping folder 
 ### Question 3: Most Deviating Race from Historical Average Total Race Duration
 
 - **Goal**: Identify the race with the most deviation from the historical average race duration for each circuit.
-- **Process**: Calculate total race duration for each race and compare it with the historical average for the same circuit.
+- **Process**: Calculate the total race duration for each race and compare it with the historical average for the same circuit to measure to find deviation. 
 - **Output**: 
 - The race with the most deviation from historical race duration.
 - Top 10 races with the largest deviations.
@@ -101,15 +91,16 @@ The script generates the following visualizations:
 
 ## Limitations
 
-- **Data Dependency**: The analysis is dependent on the accuracy and completeness of the provided datasets. Missing or incorrect data may lead to incorrect results.
-- **File Paths**: The data files must be placed in the `/F1-Statistics-Mapping/` directory for the pipeline to work.
-- **Operating System**: The code has been developed and tested on Windows and macOS. The `F1StatMap.py` script should work across all these platforms as long as Python 3.7+ and the dependencies are correctly installed.
+- **Data Dependency**: The analysis is dependent on the accuracy and completeness of the provided datasets. Missing or incorrect data may lead to incorrect calculations, additionally so if filepaths are incorrect.
+- **Operating System**: The code has been developed and tested on Windows and macOS. The `F1StatMap.py` script should work across all these platforms as long as Python 10.1+ and the respective dependencies are correctly installed, however, there is no guarantee outside the three tested systems.
 
 ## Future Enhancements
 
-- **Incorporate Additional Metrics**: Future versions of the analysis can include additional performance metrics, such as tire usage, pit stop times, and race strategy.
-- **More Advanced Predictive Models**: Implement more advanced data models to predict race outcomes based on driver behavior and race conditions.
-- **Real-Time Data Integration**: Allow the pipeline to integrate real-time race data to provide live analysis.
+### Expanded Performance Metrics
+While current analyses focus on lap time variability, pole-to-podium conversions, and duration deviations, there are numerous additional performance factors that could be integrated. These include tire strategy (e.g., stint lengths, compound), pit stop efficiency and frequency, weather conditions (rain, extreme heat), and track evolution throughout F1 history. Incorporating these variables would enable a more holistic evaluation of how decisions made during qualifying, the race, and pit stops influence final results. 
+
+### Enhanced Reporting/Visualization Filtering
+Beyond static plots, future iterations could incorporate interactive dashboards and custom reporting tools, enabling users to filter and drill down into specific drivers, teams, seasons, or race weekends. This would transform the repository from a simple analysis pipeline into a comprehensive platform for data exploration and potentially a decision-making support tool for F1 fans.
 
 ---
 
