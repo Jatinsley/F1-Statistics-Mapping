@@ -16,12 +16,10 @@ Formula 1 race data is publicly available and can provide valuable insights into
 ## Requirements
 - **Operating System**: Windows, or macOS
 - **Libraries**:
-  - Python 3.7+
+  - Python 10.1+
   - Pandas
   - NumPy
-  - SciPy
   - Matplotlib
-  - Seaborn
 
 ## Installation
 
@@ -32,7 +30,7 @@ Use `github` to clone this repository
 ### Step 2: Install Dependencies
 Use `pip` to install the required Python libraries:
 
-'pip install pandas numpy scipy matplotlib seaborn'
+'pip install pandas numpy matplotlib'
 
 ### Step 3: Download F1 Data
 The following datasets are required for the analysis:
